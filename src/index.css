@@ -1,0 +1,120 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+} */
+.contenedor-buscador{
+	display: grid;
+	align-items: center;
+	justify-items: center;
+
+}
+.titulo-buscador{
+	border: 15px;
+	padding: 20px;
+
+}
+.buscador{
+	
+	border-radius: 15px;
+	height: 30px;
+	width: 60%;
+	text-align: justify;
+	left: 15px;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+  align-items: center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion  button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+.contenedor-buscador button{
+	cursor: pointer;
+	border: none;
+	display: flex;
+	height: 50px;
+	width: 200px;
+	align-items: center;
+	justify-content: center;
+	background-color:aquamarine;
+	border-radius: 15px;
+	font-family:'Times New Roman', Times, serif;
+	font-size: 20px;
+	transition: .3s ease all;
+	color: #241744;
+}
+.contenedor-buscador button:hover{
+	background-color: #241744;
+	color: #e0e0e0;
+}
+.btnSiguiente button:hover {
+	background: #137c32;
+}
